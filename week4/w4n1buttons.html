@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+    <script>
+        function redBG() {
+            var x = document.getElementById('bod1');
+            x.style.backgroundColor = 'Red';
+            x.style.color = 'white';
+            x.style.fontSize = '24px';
+
+        }
+        function greenBG() {
+            var x = document.getElementById('bod1');
+            x.style.backgroundColor = 'Green';
+            x.style.color = '#0ff';
+            x.style.fontSize = '12px';
+        }
+        function blueBG() {
+            var x = document.getElementById('bod1');
+            x.style.backgroundColor = 'Blue';
+            x.style.color = '#ff0';
+            x.style.fontSize = '48px';
+        }
+    </script>
+</head>
+
+<body id="bod1">
+    <button onclick="redBG()">Red</button>
+    <button onclick="greenBG()">Green</button>
+    <button onclick="blueBG()">Blue</button>
+    <h1>John's Awesome Page</h1>
+
+</body>
+
+</html>

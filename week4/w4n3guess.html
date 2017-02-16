@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var answer = Math.floor(Math.random() * 10) + 1;
+        var count = 0;
+
+        function guesses() {
+            var userGuess = parseInt(document.getElementById('guess').value);
+            if(userGuess===answer){
+                document.getElementById('result').innerHTML = "Correct in " + count + " tries";
+            } else if (userGuess < answer) {
+                document.getElementById('result').innerHTML = "Too Low";
+            } else {
+                document.getElementById('result').innerHTML = "Too High";
+            }
+            count++;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>John's Guessing Game</h1>
+    <p>Guess the number I am thinking of between 1 and 10</p>
+    <input id="guess" type="text" name="guessTF" placeholder="Guess between 1 and 10">
+    <button onclick="guesses()">Submit</button>
+    <p id="result"></p>
+</body>
+
+</html>

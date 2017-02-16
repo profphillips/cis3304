@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function greeting() {
+            document.getElementById('h1Id').innerHTML
+                = "Nice to meet you " + document.getElementById('nameId').value + "!";
+        }
+    </script>
+</head>
+
+<body>
+    <input id="nameId" type="text" name="name" placeholder="Enter Name">
+    <button onclick="greeting()">Say Hello</button>
+    <h1 id="h1Id"></h1>
+</body>
+
+</html>
